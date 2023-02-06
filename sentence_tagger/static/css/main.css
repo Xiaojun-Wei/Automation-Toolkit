@@ -1,0 +1,88 @@
+#logo {
+    margin: 0 auto;
+    width: 170px;
+    height: 100px;
+    margin-bottom: 20px;
+    position: relative;
+    object-fit: cover;
+  }
+
+h1 {
+    text-align: center;
+    position:relative;
+    width:100%;
+    height:20px;
+}
+
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background-size: 100%;
+}
+
+.content {
+    margin: 0 auto;
+    width: 950px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+    /* 如果句子太长自动overflow */
+    overflow-y: scroll;  
+}
+
+/* table, th, td {
+    width: 100px;
+    text-align: center;
+    white-space: pre;
+} */
+table, th, td, div {
+    /* width: 500px; */
+    /* height: 400px; */
+    text-align: center;
+    white-space: pre;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    text-overflow: auto;
+    overflow-x: scroll; 
+    /* overflow-y: scroll;  */
+    /* overflow-y: scroll; */
+}
+
+
+table {
+    table-layout: fixed;
+    width: min-content;
+    font-size: x-medium;
+}
+
+th {
+    height: 20px;
+}
+
+td {
+    text-align: left;
+    padding: 5px;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+    /* white-space: pre; */
+}
+
+#content {
+    width: 100%;
+    margin-bottom: 20px;
+    white-space: pre;
+}
+
+footer {
+    text-align: center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+    font-size: small;
+}

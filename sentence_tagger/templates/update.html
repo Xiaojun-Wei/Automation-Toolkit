@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+
+{% block head %} 
+
+{% endblock %} 
+{% block body %}
+
+
+
+<div class="content">
+  <h1 class="display-5"><span class="text-primary">Other Annotations</span></h1>
+
+  </table>
+  <div class="form">
+    <form action="/update/{{sentence.id}}" method="POST">
+
+      <!-- <p style="text-align: center;">{{ sentence.content}}</p> -->
+
+      <input type="text" name="content" id="content" value="{{sentence.content}}">
+      <input type="submit" value="Back" class="btn btn-success" />
+    </form>
+  </div>
+</div>
+{% endblock %}
