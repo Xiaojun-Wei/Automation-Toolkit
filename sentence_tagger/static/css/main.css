@@ -45,7 +45,7 @@ table, th, td, div {
     /* overflow: hidden; */
     /* white-space: nowrap; */
     text-overflow: auto;
-    overflow-x: scroll; 
+    overflow-x: auto; 
     /* overflow-y: scroll;  */
     /* overflow-y: scroll; */
 }
