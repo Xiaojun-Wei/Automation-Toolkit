@@ -1,10 +1,13 @@
 # Sentence Tagger
 
-This Sentence Tagger is a 3-tier application, deployed on **Heroku**.
+This Sentence Tagger is a 3-tier application, deployed on **Docker**.
 
 1. Frontend: UI is written in HTML/CSS/JavaScript
 2. Backend: Python, Flask
 3. Database: SQLAlchemy
+
+
+The annotation dictionary is located in **sentence_tagger/static/data/annotation.json**
 
 ### How To Run
 
@@ -36,4 +39,19 @@ $ (env) pip install -r requirements.txt
 
 ```
 $ (env) python app.py
+```
+
+### How To Build On Docker
+1. Download Docker for your device and register an account first
+
+2. Build an image
+
+```
+docker build -t "sentence-tagger" .
+```
+
+3. Run the container
+
+```
+docker run -it sentence-tagger
 ```
