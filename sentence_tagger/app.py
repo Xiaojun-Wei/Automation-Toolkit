@@ -12,7 +12,7 @@ db = SQLAlchemy(app)   # initialize database
 
 
 def generate_tag(sentence):
-    with open('static/data/annotation.json', 'r', encoding='gbk') as f:
+    with open('static/data/annotation_v2.json', 'r', encoding='gbk') as f:
         mapping = json.load(f)
 
     sentence = sentence.strip()
